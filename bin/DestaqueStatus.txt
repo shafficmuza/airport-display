@@ -1,0 +1,5 @@
+;voos com esses status aparecem com a luz piscando
+LAC
+NBD
+LAN
+PAT

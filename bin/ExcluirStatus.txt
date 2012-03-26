@@ -1,0 +1,3 @@
+;voos com esses codigos de status nao aparecem no display 
+DEP
+CLO
