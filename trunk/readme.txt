@@ -6,23 +6,25 @@ Infraero (brazilian airport authority) in two of
 the largest brazilian airports, since 2002
 (Guarulhos-São Paulo and Congonhas-São Paulo)
 
-It runs on Windows and can be used in single
-LCD displays or video walls (see screenshots)
+It runs on Windows machines and can be used 
+in single LCD displays or video walls (see screenshots)
 
-Visually, it simulates old style mechanical plate displays,
-which it substituted. Flight information is obtained
-from Infraero or Solari Udine (R) http server and is parsed
-from html. 
+Visually, it emulates old style mechanical plate displays
+(where plates cascade sequencialy until the right
+ information plate is reached), which it actually substituted. 
+Flight information is obtained from http server and 
+is parsed from html or xml. 
 
-Using http server to deliver flight info to 
+Using http server to deliver flight information to 
 displays allows good isolation between airport information 
 systems and displays. Also scales well to multiple displays.
-Converting it to other http sources and formats is simple enough.
+Converting it to another http source and format is simple enough.
 
 Other features:
+- Arrival/departure and gate displays
 - Embedded http server in each display allows remote monitoring
   of display status
-- Dual language status messages
+- Dual language status messages 
 - Configuration of airlines, messages, status etc using
   simple text files.
 
@@ -31,8 +33,8 @@ Other features:
 - Files are for Delphi 7. Other versions of the compiler 
 may require some changes to sources.
 
-1) These componentes (included) must be installed in the IDE
-in order to edit the program forms:
+1) These componentes (included) must be installed 
+in the Delphi IDE in order to edit the program forms:
 
    StateBox.pas 
    HttpSrv2.pas 
@@ -48,8 +50,7 @@ componentes\  - StateBox.pas, strToken.pas, httpMult.pas,
                 uThreadFlapSounder.pas,
      		ThreadHttpDownload.pas
 
-htmlparser\   - Html parser component by Richard Phillips
-	        Used for parsing html and XML  
+htmlparser\   - Html parser component. Used for parsing html and XML
 			 
 Main source files:
 
